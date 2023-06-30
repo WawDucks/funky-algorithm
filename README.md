@@ -13,10 +13,6 @@ Here are the problems that have been solved so far:
 - **Problem 2: Valid sudoku**
   - Description: Determine if a 9 x 9 Sudoku board is valid.
   - Contributors: [@yusufgltc](/yusufgltc)
- 
-- **Problem 3: Count and Say**
-  - Description: The count-and-say sequence is a sequence of digit strings defined by the recursive formula.
-  - Contributors: [@yusufgltc](/yusufgltc)
 
 ## Contributing
 
