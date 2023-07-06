@@ -36,6 +36,7 @@ public class MyPowTest {
         double result4 = MyPow.myPow(x4, n4);
         Assert.assertEquals(expected4, result4, DELTA);
 
+
         // Test case 5
         double x5 = -2.0;
         int n5 = 5;
