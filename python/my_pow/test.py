@@ -1,7 +1,5 @@
 import unittest
 
-import unittest
-
 class MyPowTestCase(unittest.TestCase):
     def test_case1(self):
         x = 2.00000
