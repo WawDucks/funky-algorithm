@@ -8,7 +8,7 @@ Here are the problems that have been solved so far:
 
 - **Problem 1: Fibonacci sequence**
   - Description: Write a function that validates input 2d array is properly shuffled under the rule of sudoku.
-  - Contributors: [@yusufgltc](/yusufgltc)
+  - Contributors: [@yusufgltc](/yusufgltc) [@OlgunOnal](/OlgunOnal)
 
 - **Problem 2: Valid sudoku**
   - Description: Determine if a 9 x 9 Sudoku board is valid.
