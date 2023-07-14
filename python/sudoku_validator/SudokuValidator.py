@@ -1,13 +1,4 @@
 class Solution:
-    def is_valid(self, nums):
-        seen = set()
-        for num in nums:
-            if num != ".":
-                if num in seen:
-                    return False
-                seen.add(num)
-        return True
-
     def isValidSudoku(self, board):
         # Check rows
         for row in board:
@@ -27,4 +18,12 @@ class Solution:
                 if not self.is_valid(sub_box):
                     return False
 
+        return True
+    def is_valid(self, nums):
+        seen = set()
+        for num in nums:
+            if num != ".":
+                if num in seen:
+                    return False
+                seen.add(num)
         return True
