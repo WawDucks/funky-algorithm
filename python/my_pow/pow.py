@@ -15,8 +15,3 @@ class Solution:
             n //= 2
 
         return result
-
-    # Test
-    #solution = Solution()
-    #ret = solution.myPow(2.00000, 10)  # Örnek girişi
-    #print(ret)
