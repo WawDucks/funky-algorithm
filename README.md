@@ -93,6 +93,19 @@ Here are the problems that have been solved so far:
  - **Problem 22:Sqrt**
    - Description: Given the head of a linked list, rotate the list to the right by k places.
    - Contributors: [@yusufgltc](/yusufgltc)
+     
+ - **Problem 23:Climbing stairs**
+   - Description: You are climbing a staircase. It takes n steps to reach the top..
+   - Contributors: [@yusufgltc](/yusufgltc)
+
+ - **Problem 24:Minimum Path Sum**
+   - Description: Given a m x n grid filled with non-negative numbers, find a path from top left to bottom right, which minimizes the sum of all numbers along its path..
+   - Contributors: [@yusufgltc](/yusufgltc)
+
+ - **Problem 25:Unique Paths**
+   - Description: Given the two integers m and n, return the number of possible unique paths that the robot can take to reach the bottom-right corner..
+   - Contributors: [@yusufgltc](/yusufgltc)
+
 
 
 ## Contributing
