@@ -1,8 +1,12 @@
-# Ignore everything by default
-/*
+# Ignore IntelliJ IDEA files
+.idea/
 
-# Include the following files and directories
-!.gitignore
-!README.md
-!python/
-!java/src/main/java/org/example/
+# Ignore Gradle-related files and directories in the 'java' directory
+java/.gradle/
+java/build/
+java/.idea/
+java/gradle/
+java/build.gradle.kts
+java/gradlew
+java/settings.gradle.kts
+java/gradlew.bat
