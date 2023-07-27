@@ -1,7 +1,8 @@
-package org.example.combination_sum;
+package org.example;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.example.combination_sum.CombinationSum;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.List;
@@ -15,7 +16,7 @@ public class CombinationSumTest {
         List<List<Integer>> result1 = CombinationSum.combinationSum(candidates1, target1);
         List<List<Integer>> expected1 = Arrays.asList(Arrays.asList(2, 2, 3), List.of(7));
 
-        Assert.assertEquals(expected1, result1);
+        Assertions.assertEquals(expected1, result1);
     }
 
 
@@ -26,7 +27,7 @@ public class CombinationSumTest {
         List<List<Integer>> result2 = CombinationSum.combinationSum(candidates2, target2);
         List<List<Integer>> expected2 = Arrays.asList(Arrays.asList(2, 2, 2, 2), Arrays.asList(2, 3, 3), Arrays.asList(3, 5));
 
-        Assert.assertEquals(expected2, result2);
+        Assertions.assertEquals(expected2, result2);
     }
 
     @Test
@@ -36,7 +37,7 @@ public class CombinationSumTest {
         List<List<Integer>> result3 = CombinationSum.combinationSum(candidates4, target4);
         List<List<Integer>> expected3 = List.of();
 
-        Assert.assertEquals(expected3, result3);
+        Assertions.assertEquals(expected3, result3);
     }
 
 

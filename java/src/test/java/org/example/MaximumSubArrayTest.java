@@ -1,9 +1,9 @@
-package org.example.max_subarray;
+package org.example;
 
 import org.junit.Test;
 
 import static org.example.max_subarray.MaximumSubArray.maxSubArray;
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MaximumSubArrayTest {
     @Test
