@@ -1,0 +1,8 @@
+# Ignore everything by default
+/*
+
+# Include the following files and directories
+!.gitignore
+!README.md
+!python/
+!java/src/main/java/org/example/
