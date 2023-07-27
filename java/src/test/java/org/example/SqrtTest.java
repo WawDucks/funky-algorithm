@@ -1,14 +1,14 @@
 package org.example;
 
 import org.example.sqrt.Sqrt;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Test;
 
 public class SqrtTest {
     @Test
     public void valid() {
-        Assertions.assertEquals(2, Sqrt.mySqrt(4));
-        Assertions.assertEquals(2, Sqrt.mySqrt(8));
+        Assert.assertEquals(2, Sqrt.mySqrt(4));
+        Assert.assertEquals(2, Sqrt.mySqrt(8));
     }
 
 }

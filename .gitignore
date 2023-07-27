@@ -1,0 +1,13 @@
+# Ignore IntelliJ IDEA files
+.idea/
+
+# Ignore Gradle-related files and directories in the 'java' directory
+.gradle/
+gradle
+app/build.gradle
+java
+out
+.gitattributes
+gradlew
+gradlew.bat
+settings.gradle

@@ -1,8 +1,8 @@
 package org.example;
 
 import org.example.insert_intervals.InsertInterval;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Test;
 
 public class InsertIntervalTest {
     @Test
@@ -11,7 +11,7 @@ public class InsertIntervalTest {
         int[][] expected = new int[][]{{1, 5}, {6, 9}};
         int[] input = new int[]{2, 5};
 
-        Assertions.assertArrayEquals(expected, InsertInterval.insert(actual, input));
+        Assert.assertArrayEquals(expected, InsertInterval.insert(actual, input));
     }
 
     @Test
@@ -20,7 +20,7 @@ public class InsertIntervalTest {
         int[][] expected = new int[][]{{1, 2}, {3, 10}, {12, 16}};
         int[] input = new int[]{4, 8};
 
-        Assertions.assertArrayEquals(expected, InsertInterval.insert(actual, input));
+        Assert.assertArrayEquals(expected, InsertInterval.insert(actual, input));
     }
   @Test
     public void invalid_test() {
@@ -28,7 +28,7 @@ public class InsertIntervalTest {
         int[][] expected = new int[][]{{1, 2}, {3, 10}, {12, 16}};
         int[] input = new int[]{4, 8};
 
-        Assertions.assertNotEquals( expected, InsertInterval.insert(actual, input));
+        Assert.assertNotEquals( expected, InsertInterval.insert(actual, input));
     }
 
 }

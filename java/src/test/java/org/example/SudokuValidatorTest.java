@@ -1,8 +1,8 @@
 package org.example;
 
 import org.example.sudoku_validator.SudokuValidator;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Test;
 
 public class SudokuValidatorTest {
     @Test
@@ -19,7 +19,7 @@ public class SudokuValidatorTest {
                 {'.', '.', '.', '.', '8', '.', '.', '7', '9'}
         };
 
-        Assertions.assertTrue(SudokuValidator.isValidSudoku(actual));
+        Assert.assertTrue(SudokuValidator.isValidSudoku(actual));
     }
 
     @Test
@@ -36,6 +36,6 @@ public class SudokuValidatorTest {
                 {'.', '.', '.', '.', '8', '.', '.', '7', '9'}
         };
 
-        Assertions.assertFalse(SudokuValidator.isValidSudoku(actual));
+        Assert.assertFalse(SudokuValidator.isValidSudoku(actual));
     }
 }

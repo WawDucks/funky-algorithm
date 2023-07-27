@@ -1,8 +1,8 @@
 package org.example;
 
 import org.example.permutations.Permutations;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -20,7 +20,7 @@ public class PermutationsTest {
         expected.add(Arrays.asList(3, 1, 2));
         expected.add(Arrays.asList(3, 2, 1));
         List<List<Integer>> result = Permutations.generatePermutations(nums);
-        Assertions.assertEquals(expected.size(), result.size());
-        Assertions.assertTrue(result.containsAll(expected));
+        Assert.assertEquals(expected.size(), result.size());
+        Assert.assertTrue(result.containsAll(expected));
     }
 }
