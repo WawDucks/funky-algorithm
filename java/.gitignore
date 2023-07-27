@@ -9,3 +9,4 @@ java/gradle/
 java/build.gradle.kts
 java/gradlew
 java/settings.gradle.kts
+java/gradlew.bat
