@@ -1,8 +1,8 @@
-name: Weekly Test
+name: weekly_test
 
 on:
   schedule:
-    - cron: '0 0 * * 0' # Run every Sunday at midnight UTC
+    - cron: '0 0 * * 0'
 
 jobs:
   test:
@@ -13,13 +13,18 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Set up JDK (if applicable)
-        uses: actions/setup-java@v2 # Change to your language/setup action if necessary
+      - name: Set up JDK
+        uses: actions/setup-java@v2
         with:
           java-version: '17'
 
       - name: Build with Gradle
         run: ./gradlew build
 
-      - name: Run Tests
-        run: ./gradlew test
+      - name: List Test Classes
+        id: list_tests
+        run: |
+          echo ::set-output name=test_classes::$(find ./src/test/java -name '*Test.java' | sed -e 's/^\.\///' -e 's/\//./g' -e 's/.java//')
+
+      - name: Run Specific Tests
+        run: ./gradlew test --tests "${{ steps.list_tests.outputs.test_classes }}"
