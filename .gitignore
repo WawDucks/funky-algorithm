@@ -5,7 +5,6 @@
 .gradle/
 gradle
 app/build.gradle
-java
 out
 .gitattributes
 gradlew
