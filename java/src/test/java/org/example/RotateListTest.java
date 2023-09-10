@@ -2,8 +2,8 @@ package org.example;
 
 import org.example.rotate_list.ListNode;
 import org.example.rotate_list.RotateList;
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class RotateListTest {
     @Test
@@ -12,19 +12,19 @@ public class RotateListTest {
         ListNode head1 = new ListNode(1);
         RotateList solution = new RotateList();
         ListNode rotated1 = solution.rotateRight(head1, 0);
-        Assert.assertEquals(1, rotated1.val);
-        Assert.assertNull(rotated1.next);
+        Assertions.assertEquals(1, rotated1.val);
+        Assertions.assertNull(rotated1.next);
 
         // Test case 2: Rotate an empty list
         ListNode head2 = null;
         ListNode rotated2 = solution.rotateRight(head2, 3);
-        Assert.assertNull(rotated2);
+        Assertions.assertNull(rotated2);
 
         // Test case 3: Rotate a list with a single node by 1 position
         ListNode head3 = new ListNode(2);
         ListNode rotated3 = solution.rotateRight(head3, 1);
-        Assert.assertEquals(2, rotated3.val);
-        Assert.assertNull(rotated3.next);
+        Assertions.assertEquals(2, rotated3.val);
+        Assertions.assertNull(rotated3.next);
 
         // Test case 4: Rotate a list with multiple nodes by 3 positions
         ListNode node5 = new ListNode(5);
@@ -34,11 +34,11 @@ public class RotateListTest {
         ListNode node1 = new ListNode(1, node2);
 
         ListNode rotated4 = solution.rotateRight(node1, 3);
-        Assert.assertEquals(3, rotated4.val);
-        Assert.assertEquals(4, rotated4.next.val);
-        Assert.assertEquals(5, rotated4.next.next.val);
-        Assert.assertEquals(1, rotated4.next.next.next.val);
-        Assert.assertEquals(2, rotated4.next.next.next.next.val);
-        Assert.assertNull(rotated4.next.next.next.next.next);
+        Assertions.assertEquals(3, rotated4.val);
+        Assertions.assertEquals(4, rotated4.next.val);
+        Assertions.assertEquals(5, rotated4.next.next.val);
+        Assertions.assertEquals(1, rotated4.next.next.next.val);
+        Assertions.assertEquals(2, rotated4.next.next.next.next.val);
+        Assertions.assertNull(rotated4.next.next.next.next.next);
     }
 }

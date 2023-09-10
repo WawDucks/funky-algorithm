@@ -39,6 +39,6 @@ jobs:
           chmod +x gradlew
 
           # Run Gradle tests for your Java project, specifying the correct test package path
-          ./gradlew test --tests "org.example.*"
+          ./gradlew test
         env:
           JAVA_HOME: /opt/hostedtoolcache/Java_Adopt_jdk/11.0.20-101/x64

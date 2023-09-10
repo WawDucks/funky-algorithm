@@ -1,8 +1,8 @@
 package org.example;
 
 import org.example.rotate_image.RotateImage;
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class RotateImageTest {
 
@@ -24,6 +24,6 @@ public class RotateImageTest {
                 {9, 6, 3}
         };
 
-        Assert.assertArrayEquals(expected, matrix);
+        Assertions.assertArrayEquals(expected, matrix);
     }
 }

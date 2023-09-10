@@ -1,7 +1,8 @@
 package org.example;
 
-import org.junit.Assert;
-import org.junit.Test;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class FirstOccurrenceTest {
     @Test
@@ -9,7 +10,7 @@ public class FirstOccurrenceTest {
         String haystack1 = "sadbutsad";
         String needle1 = "sad";
 
-        Assert.assertEquals(0, FirstOccurrence.strStr(haystack1, needle1));
+        Assertions.assertEquals(0, FirstOccurrence.strStr(haystack1, needle1));
     }
 
     @Test
@@ -17,6 +18,6 @@ public class FirstOccurrenceTest {
         String haystack2 = "leetcode";
         String needle2 = "leeto";
 
-        Assert.assertEquals(-1, FirstOccurrence.strStr(haystack2, needle2));
+        Assertions.assertEquals(-1, FirstOccurrence.strStr(haystack2, needle2));
     }
 }

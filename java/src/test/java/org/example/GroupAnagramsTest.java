@@ -1,8 +1,8 @@
 package org.example;
 
 import org.example.group_anagrams.GroupAnagrams;
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -27,7 +27,7 @@ public class GroupAnagramsTest {
 
         Set<List<String>> expectedSet = new HashSet<>(expected);
         Set<List<String>> actualSet = new HashSet<>(actual);
-        Assert.assertEquals(expectedSet, actualSet);
+        Assertions.assertEquals(expectedSet, actualSet);
     }
 
 }

@@ -1,30 +1,30 @@
 package org.example;
 
 import org.example.count_and_say.CountAndSay;
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 
 public class CountAndSayTest {
     @Test
     public void valid_test() {
-        Assert.assertEquals("1", CountAndSay.countAndSay(1));
-        Assert.assertEquals("1211", CountAndSay.countAndSay(4));
+        Assertions.assertEquals("1", CountAndSay.countAndSay(1));
+        Assertions.assertEquals("1211", CountAndSay.countAndSay(4));
     }
 
     @Test
     public void invalid_test() {
-        Assert.assertNotEquals("1", CountAndSay.countAndSay(2));
+        Assertions.assertNotEquals("1", CountAndSay.countAndSay(2));
     }
 
     @Test
     public void valid_test_recursive() {
-        Assert.assertEquals("1", CountAndSay.countAndSayRecursive(1));
-        Assert.assertEquals("1211", CountAndSay.countAndSayRecursive(4));
+        Assertions.assertEquals("1", CountAndSay.countAndSayRecursive(1));
+        Assertions.assertEquals("1211", CountAndSay.countAndSayRecursive(4));
     }
 
     @Test
     public void invalid_test_recursive() {
-        Assert.assertNotEquals("1", CountAndSay.countAndSayRecursive(2));
+        Assertions.assertNotEquals("1", CountAndSay.countAndSayRecursive(2));
     }
 }
