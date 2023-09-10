@@ -32,16 +32,13 @@ jobs:
           # Print the current directory to debug path issues
           pwd
 
-          # Navigate to your Java source directory
-          cd java
-
-          # List the files in the current directory to debug path issues
-          ls -la
+          # Navigate to the root directory of your repository
+          cd $GITHUB_WORKSPACE
 
           # Ensure the gradlew script is executable
-          chmod +x ../gradlew
+          chmod +x gradlew
 
           # Run Gradle tests for your Java project
-          ../gradlew test --tests "org.example.test.*"
+          ./gradlew test --tests "org.example.test.*"
         env:
           JAVA_HOME: /opt/hostedtoolcache/Java_Adopt_jdk/11.0.20-101/x64
