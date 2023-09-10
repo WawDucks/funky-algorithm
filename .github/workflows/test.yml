@@ -33,7 +33,7 @@ jobs:
           pwd
 
           # Navigate to your Java source directory
-          cd C:/Users/ygult/waw-duck/funky-algorithm/java/src
+          cd /mnt/c/Users/ygult/waw-duck/funky-algorithm/java/src
 
           # List the files in the current directory to debug path issues
           ls -la
