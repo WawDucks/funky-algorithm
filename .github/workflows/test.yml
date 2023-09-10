@@ -19,7 +19,6 @@ jobs:
           java-version: '11'  # Set the desired Java version
           distribution: 'adopt'  # Specify the distribution here
 
-
       - name: Cache Gradle dependencies
         uses: actions/cache@v2
         with:
@@ -30,5 +29,17 @@ jobs:
 
       - name: Build and Run Tests
         run: |
-          cd java/src  # Navigate to your Java source directory
+          # Print the current directory to debug path issues
+          pwd
+
+          # Navigate to your Java source directory
+          cd waw-duck/funky-algorithm/java/src
+
+          # List the files in the current directory to debug path issues
+          ls -la
+
+          # Ensure the gradlew script is executable
+          chmod +x ./gradlew
+
+          # Run Gradle tests for your Java project
           ./gradlew test --tests "org.example.test.*"
