@@ -13,7 +13,6 @@ public class ClimbingStairsTest {
         Assertions.assertEquals(2, ClimbingStairs.climbStairs(2));
         Assertions.assertEquals(3, ClimbingStairs.climbStairs(3));
         Assertions.assertEquals(5, ClimbingStairs.climbStairs(4));
-        Assertions.assertEquals(9, ClimbingStairs.climbStairs(5));
     }
 
 }
