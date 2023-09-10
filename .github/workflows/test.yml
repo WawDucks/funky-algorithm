@@ -39,9 +39,7 @@ jobs:
           ls -la
 
           # Ensure the gradlew script is executable
-          chmod +x ./gradlew
+          chmod +x /mnt/c/Users/ygult/waw-duck/funky-algorithm/gradlew
 
           # Run Gradle tests for your Java project
-          ./gradlew test --tests "org.example.test.*"
-        env:
-          JAVA_HOME: /opt/hostedtoolcache/Java_Adopt_jdk/11.0.20-101/x64
+          /mnt/c/Users/ygult/waw-duck/funky-algorithm/gradlew test --tests "org.example.test.*"
