@@ -33,7 +33,7 @@ jobs:
           pwd
 
           # Navigate to your Java source directory
-          cd java/src
+          cd java
 
           # List the files in the current directory to debug path issues
           ls -la
