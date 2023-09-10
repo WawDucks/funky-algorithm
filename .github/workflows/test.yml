@@ -1,0 +1,31 @@
+name: Weekly Tests
+
+on:
+  schedule:
+    - cron: '0 0 * * 0'  # Schedule to run every Sunday at midnight UTC
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Set up Java
+        uses: actions/setup-java@v2
+        with:
+          java-version: '11'  # Set the desired Java version
+
+      - name: Cache Gradle dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.gradle/caches
+          key: gradle-${{ runner.os }}-${{ hashFiles('**/*.gradle*', '**/*.properties') }}
+          restore-keys: |
+            gradle-${{ runner.os }}-
+
+      - name: Build and Run Tests
+        run: |
+          cd java/src  # Navigate to your Java source directory
+          ./gradlew test --tests "org.example.test.*"
