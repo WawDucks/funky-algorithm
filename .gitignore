@@ -1,12 +1,16 @@
 # Ignore IntelliJ IDEA files
 .idea/
 
-# Ignore Gradle-related files and directories in the 'java' directory
+# Ignore Gradle project-specific cache directory (for caching Gradle dependencies)
 .gradle/
-gradle
-app/build.gradle
-out
-.gitattributes
-gradlew
-gradlew.bat
-settings.gradle
+
+# Ignore Gradle build output directories (for build artifacts)
+build/
+out/
+
+# Exclude these files to ensure Gradle Wrapper is included
+!gradlew
+!gradlew.bat
+
+# Exclude this directory to ensure .gradle is included
+!.gradle/
