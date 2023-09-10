@@ -1,0 +1,40 @@
+name: Java Test
+
+on:
+  schedule:
+    - cron: '0 0 * * 0'  # Schedule to run every Sunday at midnight UTC
+  workflow_dispatch: {}   # Enable manual workflow dispatch
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Set up Java
+        uses: actions/setup-java@v2
+        with:
+          java-version: '17'  # Set the desired Java version to 17
+          distribution: 'adopt'  # Specify the distribution here
+
+      - name: Clean Gradle Cache
+        run: |
+          rm -rf ~/.gradle/caches
+
+      - name: Build and Run Tests
+        run: |
+          # Print the current directory to debug path issues
+          pwd
+
+          # Navigate to your Java source directory
+          cd java/src
+
+          # Ensure the gradlew script is executable
+          chmod +x ../gradlew
+
+          # Run Gradle tests for your Java project
+          ../gradlew test
+        env:
+          JAVA_HOME: ${{ env.JAVA_HOME }}
