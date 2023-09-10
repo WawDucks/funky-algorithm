@@ -32,8 +32,8 @@ jobs:
           # Print the current directory to debug path issues
           pwd
 
-          # Navigate to your Java source directory
-          cd /mnt/c/Users/ygult/waw-duck/funky-algorithm/java/src
+          # Navigate to your Java source directory using the absolute path
+          cd /home/runner/work/funky-algorithm/funky-algorithm/java/src
 
           # List the files in the current directory to debug path issues
           ls -la
