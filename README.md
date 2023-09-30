@@ -72,7 +72,7 @@ Here are the problems that have been solved so far:
 
  - **Problem 17:Plus One**
    - Description: You are given a large integer represented as an integer array digits, where each digits[i] is the ith digit of the integer.
-   - Contributors: [@yusufgltc](/yusufgltc)
+   - Contributors: [@yusufgltc](/yusufgltc) [@monikagiemela](/monikagiemela)
 
  - **Problem 18:Rotate image**
    - Description: GYou are given an n x n 2D matrix representing an image, rotate the image by 90 degrees (clockwise).
@@ -106,9 +106,6 @@ Here are the problems that have been solved so far:
    - Description: Given the two integers m and n, return the number of possible unique paths that the robot can take to reach the bottom-right corner..
    - Contributors: [@yusufgltc](/yusufgltc)
 
-  - **Problem 26: Plus One**
-    - Description: Given a large integer represented as an integer array increment the large integer by one and return the resulting array.
-    - Contributors: [@monikagiemela](/monikagiemela)
 
 
 ## Contributing
