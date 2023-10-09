@@ -106,6 +106,10 @@ Here are the problems that have been solved so far:
    - Description: Given the two integers m and n, return the number of possible unique paths that the robot can take to reach the bottom-right corner..
    - Contributors: [@yusufgltc](/yusufgltc)
 
+- **Problem 26:Add Binary**
+  - Describtion: Given two binary strings a and b, return their sum as a binary string.
+  - Contributors: [@monikagiemela](/monikagiemela)
+
 
 
 ## Contributing
