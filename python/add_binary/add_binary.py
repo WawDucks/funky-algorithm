@@ -21,9 +21,3 @@ class Solution:
             b_i -= 1
         
         return result
-
-solution = Solution()
-print(solution.addBinary("11", "1"))
-print(solution.addBinary("1010", "1011"))
-print(solution.addBinary("1111", "1111"))
-
