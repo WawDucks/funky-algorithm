@@ -14,3 +14,5 @@ out/
 
 # Exclude this directory to ensure .gradle is included
 !.gradle/
+
+__pycache__/
