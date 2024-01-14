@@ -24,6 +24,7 @@ public class SudokuSolverTest {
         Assertions.assertTrue(SudokuSolver.isValidSudoku(actual));
         Assertions.assertTrue(SudokuSolver2.isValidSudoku(actual));
         Assertions.assertTrue(SudokuSolver3.isValidSudoku(actual));
+        
     }
 
     @Test
