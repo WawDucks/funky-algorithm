@@ -109,6 +109,11 @@ Here are the problems that have been solved so far:
 - **Problem 26:Add Binary**
   - Describtion: Given two binary strings a and b, return their sum as a binary string.
   - Contributors: [@monikagiemela](/monikagiemela)
+ 
+- **Problem 27:Maze Solver**
+  - Describtion: A maze given as N*N binary matrix of blocks, return the list of the possible paths to escape.
+  - Contributors: [@yusufgltc](/yusufgltc)
+
 
 
 
