@@ -1,12 +1,12 @@
 package org.example;
 
-import org.example.sudoku_validator.SudokuValidator;
-import org.example.sudoku_validator.SudokuValidator2;
-import org.example.sudoku_validator.SudokuValidator3;
+import org.example.sudoku_solver.SudokuSolver;
+import org.example.sudoku_solver.SudokuSolver2;
+import org.example.sudoku_solver.SudokuSolver3;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class SudokuValidatorTest {
+public class SudokuSolverTest {
     @Test
     public void valid_test() {
         char[][] actual = {
@@ -21,9 +21,9 @@ public class SudokuValidatorTest {
                 {'.', '.', '.', '.', '8', '.', '.', '7', '9'}
         };
 
-        Assertions.assertTrue(SudokuValidator.isValidSudoku(actual));
-        Assertions.assertTrue(SudokuValidator2.isValidSudoku(actual));
-        Assertions.assertTrue(SudokuValidator3.isValidSudoku(actual));
+        Assertions.assertTrue(SudokuSolver.isValidSudoku(actual));
+        Assertions.assertTrue(SudokuSolver2.isValidSudoku(actual));
+        Assertions.assertTrue(SudokuSolver3.isValidSudoku(actual));
     }
 
     @Test
@@ -40,8 +40,8 @@ public class SudokuValidatorTest {
                 {'.', '.', '.', '.', '8', '.', '.', '7', '9'}
         };
 
-        Assertions.assertFalse(SudokuValidator.isValidSudoku(actual));
-        Assertions.assertFalse(SudokuValidator2.isValidSudoku(actual));
-        Assertions.assertFalse(SudokuValidator3.isValidSudoku(actual));
+        Assertions.assertFalse(SudokuSolver.isValidSudoku(actual));
+        Assertions.assertFalse(SudokuSolver2.isValidSudoku(actual));
+        Assertions.assertFalse(SudokuSolver3.isValidSudoku(actual));
     }
 }

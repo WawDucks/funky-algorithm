@@ -1,8 +1,8 @@
-package org.example.sudoku_validator;
+package org.example.sudoku_solver;
 
 import java.util.HashSet;
 
-public class SudokuValidator2 {
+public class SudokuSolver2 {
     public static boolean isValidSudoku(char[][] board) {
         HashSet<String> seen = new HashSet<>();
         

@@ -1,6 +1,6 @@
-package org.example.sudoku_validator;
+package org.example.sudoku_solver;
 
-public class SudokuValidator3 {
+public class SudokuSolver3 {
     public static boolean isValidSudoku(char[][] board) {
         return dfs(board);
     }
