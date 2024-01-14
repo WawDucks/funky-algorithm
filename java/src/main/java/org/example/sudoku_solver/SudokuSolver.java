@@ -8,6 +8,7 @@ public class SudokuSolver {
         if (board.length == 0) {
             return false;
         }
+        
 
         //rows
         for (int row = 0; row < 9; row++) {
