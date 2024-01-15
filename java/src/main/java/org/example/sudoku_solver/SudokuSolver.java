@@ -1,13 +1,14 @@
-package org.example.sudoku_validator;
+package org.example.sudoku_solver;
 
 import java.util.HashSet;
 import java.util.Set;
 
-public class SudokuValidator {
+public class SudokuSolver {
     public static boolean isValidSudoku(char[][] board) {
         if (board.length == 0) {
             return false;
         }
+        
 
         //rows
         for (int row = 0; row < 9; row++) {
