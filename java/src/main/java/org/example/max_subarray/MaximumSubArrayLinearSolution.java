@@ -1,6 +1,6 @@
 package org.example.max_subarray;
 
-public class MaximumSubArray {
+public class MaximumSubArrayLinearSolution {
     public static int maxSubArray(int[] input) {
         int maxSum = input[0];
         int tempSum = input[0];
