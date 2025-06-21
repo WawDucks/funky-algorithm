@@ -16,3 +16,4 @@ out/
 !.gradle/
 
 __pycache__/
+.DS_Store
